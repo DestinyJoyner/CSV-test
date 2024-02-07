@@ -8,4 +8,4 @@ poke.get("/", async (req,res) => {
 })
 
 
-module.exports = pokemon
+module.exports = poke
