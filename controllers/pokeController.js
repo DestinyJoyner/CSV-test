@@ -7,7 +7,7 @@ poke.get("/", async (req,res) => {
     const {name} = req.query
     console.log(name)
     if(name){
-        allPokemon = getAllPokemon(name)
+        allPokemon = await getAllPokemon(name)
     }
     else{
          allPokemon = await getAllPokemon()
