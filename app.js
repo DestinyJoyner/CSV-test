@@ -1,8 +1,11 @@
 const express = require("express")
 const cors = require("cors")
 const app = express()
+
+const movieController = require("./controllers/movieController.js")
 app.use(express.json())
 app.use(cors())
+app.use("/movies", movieController)
 
 
 
