@@ -5,6 +5,7 @@ const {getAllPokemon} = require("../query/poke.js")
 poke.get("/", async (req,res) => {
     let allPokemon
     const {name} = req.query
+    console.log(name)
     if(name){
         allPokemon = getAllPokemon(name)
     }
